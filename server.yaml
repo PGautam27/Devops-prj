@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: WebApp
+metadata:
+  name: WebApp
+  namespaces : default
+spec:
+  containers:
+  - name: WebApp
+    image: appuwebapp
+    ports:
+    - containerPort: 80
