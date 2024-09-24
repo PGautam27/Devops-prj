@@ -1,11 +1,11 @@
 apiVersion: v1
-kind: WebApp
+kind: Pod
 metadata:
-  name: WebApp
+  name: bookserver
   namespaces : default
 spec:
   containers:
-  - name: WebApp
-    image: appuwebapp
+  - name: bookserver
+    image: pgautam27/bookserver
     ports:
-    - containerPort: 80
+    - containerPort: 3000
