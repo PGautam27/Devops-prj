@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: bookserver-np
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      app: bookserver
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector: {}  # Allows traffic from any pod in the namespace
+        # Uncomment below to allow traffic from a specific IP range
+        # - ipBlock:
+        #     cidr: <your-local-ip>/32
