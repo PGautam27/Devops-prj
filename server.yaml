@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
     - name: bookserver
-      image: pgautam27/bookserver
+      image: pgautam27/bookserver:v2
       ports:
         - containerPort: 3000

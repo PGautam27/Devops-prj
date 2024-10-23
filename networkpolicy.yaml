@@ -12,6 +12,6 @@ spec:
   ingress:
     - from:
         - podSelector: {}  # Allows traffic from any pod in the namespace
-        # Uncomment below to allow traffic from a specific IP range
+        # Uncomment below to allow traffic from a specific IPmini range
         # - ipBlock:
         #     cidr: <your-local-ip>/32
